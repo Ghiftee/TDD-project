@@ -8,4 +8,21 @@ class Solver
       (1..num).inject(:*) || 1
     end
   end
+
+  def reverse(word)
+    word.reverse
+  end
+
+  def fizzbuzz(num)
+    if (num % 15).zero?
+      ‘fizzbuzz’
+    elsif (num % 5).zero?
+      ‘buzz’
+    elsif (num % 3).zero?
+      ‘fizz’
+    else
+      num.to_s
+    end
+  end
+  
 end
